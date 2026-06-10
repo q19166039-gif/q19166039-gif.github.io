@@ -1,0 +1,45 @@
+title: "我的技术博客"
+description: "专注编程、后端、开发笔记 | Minimal Mistakes 极简模板"
+baseurl: ""
+url: "https://q19166039-gif.github.io"
+github_username: q19166039-gif
+
+remote_theme: mmistakes/minimal-mistakes@4.28.0
+minimal_mistakes_skin: "dark"
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+author:
+  name: "q19166039-gif"
+  bio: "编程爱好者 | 技术笔记分享"
+  links:
+    - label: GitHub
+      icon: "fab fa-github"
+      url: "https://github.com/q19166039-gif"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache
+
+paginate: 5
+paginate_path: "/page:num/"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
