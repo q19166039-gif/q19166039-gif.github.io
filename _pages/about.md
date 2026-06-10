@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 关于我
+permalink: /about/
+author_profile: true
 ---
 
 欢迎来到我的技术博客。
