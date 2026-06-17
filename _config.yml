@@ -42,6 +42,9 @@ plugins:
 paginate: 5
 paginate_path: "/page:num/"
 
+# Simplify permalinks to remove categories from URL
+permalink: /:year/:month/:day/:title/
+
 defaults:
   - scope:
       path: ""
