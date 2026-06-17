@@ -1,3 +1,10 @@
+---
+title: "Hermes-Agent 人格配置完全指南：自带人格 + 自定义设置 + 切换方法"
+date: 2026-06-17
+categories: [技术, Hermes-Agent]
+tags: [AI, Hermes, 教程]
+---
+
 # Hermes-Agent 人格配置完全指南：自带人格 + 自定义设置 + 切换方法
 
 Hermes-Agent 支持灵活的人格配置，你可以随时切换不同风格的助手回复。本文整理了自带人格、自定义人格添加方法，以及如何快速切换。

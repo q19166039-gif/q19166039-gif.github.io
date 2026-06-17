@@ -1,3 +1,10 @@
+---
+title: "Hermes-Agent 简要中文使用手册"
+date: 2026-06-17
+categories: [技术, Hermes-Agent]
+tags: [AI, Hermes, 教程]
+---
+
 # Hermes-Agent 简要中文使用手册
 
 > 澄清：Hermes-Agent 是 **Nous Research** 开发的开源AI代理项目，并非吴恩达发布。本文整理核心用法方便快速查阅。
