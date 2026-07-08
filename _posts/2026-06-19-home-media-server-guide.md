@@ -31,8 +31,8 @@ Jellyfin 自动扫描 → 直接播放
 
 | 项目 | 值 |
 |------|------|
-| 宿主机 | PVE (192.168.101.88) |
-| Jellyfin LXC IP | 192.168.101.165 |
+| 宿主机 | PVE (192.168.1.88) |
+| Jellyfin LXC IP | 192.168.1.165 |
 | 系统 | Debian 12, 2核/4GB |
 | 存储 | 2.5T 挂载到 `/media` |
 | 容器类型 | 非特权 (unprivileged) |
@@ -219,14 +219,14 @@ nsenter -t $CTPID -m -u -i -n -p -- ss -tlnp
 
 ### 1. qBittorrent
 
-访问 `http://192.168.101.165:8080`
+访问 `http://192.168.1.165:8080`
 - 默认用户名：`admin`
 - 默认密码：`adminadmin`
 - 建议：设置 → Web UI → 修改密码
 
 ### 2. Prowlarr
 
-访问 `http://192.168.101.165:9696`
+访问 `http://192.168.1.165:9696`
 - Settings → Indexers → 添加公开 tracker（推荐）：
   - 1337x
   - TorrentGalaxy
@@ -241,7 +241,7 @@ nsenter -t $CTPID -m -u -i -n -p -- ss -tlnp
 
 ### 3. Radarr
 
-访问 `http://192.168.101.165:7878`
+访问 `http://192.168.1.165:7878`
 - Settings → Media Management：
   - 勾选 "Rename Movies"（自动重命名）
   - Movies Folder: `/media/movies`
@@ -251,7 +251,7 @@ nsenter -t $CTPID -m -u -i -n -p -- ss -tlnp
 
 ### 4. Sonarr
 
-访问 `http://192.168.101.165:8989`
+访问 `http://192.168.1.165:8989`
 - Settings → Media Management：
   - 勾选 "Rename Episodes"
   - Series Folder: `/media/tv`
@@ -261,7 +261,7 @@ nsenter -t $CTPID -m -u -i -n -p -- ss -tlnp
 
 ### 5. Jellyfin
 
-访问 `http://192.168.101.165:8096`
+访问 `http://192.168.1.165:8096`
 - 控制台 → 媒体库 → 添加媒体库：
   - 电影 → 文件夹 `/media/movies`
   - 剧集 → 文件夹 `/media/tv`
