@@ -6,6 +6,8 @@ categories: [network, router]
 tags: [ac2100, openwrt, sing-box, breed, backup]
 ---
 
+> 📥 **下载备份文件**：[ac2100-backup-20260711.tar.gz](/assets/files/ac2100-backup-20260711.tar.gz)（~3.9MB）
+
 ## 备份文件说明
 
 备份文件：`ac2100-backup-20260711.tar.gz`（大小约 3.9MB）
