@@ -1,0 +1,43 @@
+name: Jekyll CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: jekyll-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --strict_front_matter
+
+      - name: Verify publishing features
+        shell: bash
+        run: |
+          test -f "_site/index.html"
+          test -f "_site/page2/index.html"
+          test -f "_site/2026/07/19/openwrt-firewall-ssh-port-forwarding-security/index.html"
+          test -f "_site/admin/index.html"
+          grep -q 'lang="zh-CN"' "_site/index.html"
+          grep -q 'github.com/q19166039-gif/q19166039-gif.github.io/delete/main/_posts/' "_site/admin/index.html"
