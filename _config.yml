@@ -1,8 +1,26 @@
+locale: "zh-CN"
 title: "我的技术博客"
-description: "专注编程、后端、开发笔记 | Minimal Mistakes 极简模板"
+title_separator: "|"
+description: "分享家庭网络、AI 工程、量化系统与开发实践的中文技术博客"
 baseurl: ""
 url: "https://q19166039-gif.github.io"
+repository: "q19166039-gif/q19166039-gif.github.io"
+repository_branch: "main"
 github_username: q19166039-gif
+
+# Search and navigation
+search: true
+search_full_content: true
+breadcrumbs: true
+
+# SEO and social sharing
+og_image: "https://avatars.githubusercontent.com/u/244852751?v=4"
+og_image_alt: "q19166039-gif 的 GitHub 头像"
+social:
+  type: Person
+  name: "q19166039-gif"
+  links:
+    - "https://github.com/q19166039-gif"
 
 include:
   - _pages
@@ -53,6 +71,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      show_date: true
       comments: false
       share: true
       related: true
