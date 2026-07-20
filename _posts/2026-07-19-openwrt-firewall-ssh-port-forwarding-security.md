@@ -2,7 +2,8 @@
 layout: post
 title: "OpenWrt 防火墙实战：关闭 SSH 端口转发与风险端口扫描"
 date: 2026-07-19 10:00:00 +0800
-excerpt: "记录 OpenWrt 关闭 SSH 端口转发、清理 nftables 残留规则并检查 WAN 暴露面的完整流程。"\ncategories: [network, security]
+excerpt: "记录 OpenWrt 关闭 SSH 端口转发、清理 nftables 残留规则并检查 WAN 暴露面的完整流程。"
+categories: [network, security]
 tags: [openwrt, firewall, nftables, ssh, security]
 ---
 
