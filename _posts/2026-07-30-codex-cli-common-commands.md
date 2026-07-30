@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Codex CLI 常用命令手册"
 date: 2026-07-30
 excerpt: "面向终端用户的 Codex CLI 命令参考，涵盖交互式启动、非交互执行、代码审查、会话管理、MCP/插件及安全边界。"

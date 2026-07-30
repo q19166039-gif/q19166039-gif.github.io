@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "构建个人 AI 量化交易系统：从行情采集到日报统计全链路"
 date: 2026-07-13 10:00:00 +0800
 categories: [trading, ai]

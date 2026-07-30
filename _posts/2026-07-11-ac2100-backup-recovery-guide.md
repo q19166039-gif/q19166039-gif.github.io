@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Redmi AC2100 OpenWrt 备份与恢复指南（含 Breed 刷机恢复）"
 date: 2026-07-11 03:00:00 +0800
 categories: [network, router]
